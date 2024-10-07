@@ -17,6 +17,9 @@
             font-family: Arial, sans-serif;
             font-size: 20px;
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         /* Header styling */
         .header {
@@ -25,16 +28,15 @@
             align-items: center;
             padding: 20px;
             background-color: white;
-            position: absolute;
-            top: 0;
             width: 100%;
+            position: fixed;
+            top: 0;
             z-index: 1000;
         }
         .title1 {
             font-size: 36px;
             font-weight: bold;
             color: rgb(8, 72, 56);
-            margin-left: 20px;
         }
         .navigation {
             margin-right: 20px;
@@ -49,27 +51,25 @@
         .navigation a:hover {
             text-decoration: underline;
         }
-        /* Center content */
-        .center-content {
+        /* Centered container for the main content */
+        .centered-content {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh; /* Full viewport height */
+            margin-top: 150px; /* To avoid overlapping with fixed header */
             text-align: center;
-            margin-top: 100px; /* To avoid overlapping the header */
         }
+        /* Banner centering */
         .banner img {
-            width: 60%; /* Adjust this to control banner size */
-            display: block;
-            margin: 0 auto;
+            width: 60%; /* Adjust the size of the banner image */
+            margin: 20px 0;
         }
         /* Green band */
         .green-band {
             background-color: rgb(8, 72, 56);
             height: 50px;
             width: 100%; /* Full width */
-            margin-top: 20px;
         }
         /* Content styling */
         h2 {
@@ -79,6 +79,8 @@
         p {
             font-size: 22px;
             color: rgb(8, 72, 56);
+            max-width: 800px; /* Limit text width for readability */
+            margin: 20px auto;
         }
         footer {
             text-align: center;
@@ -87,6 +89,7 @@
             color: rgb(8, 72, 56);
             border-top: 1px solid rgb(8, 72, 56);
             font-size: 20px;
+            width: 100%;
             position: relative;
         }
     </style>
@@ -109,7 +112,7 @@
     </div>
 
     <!-- Centered content -->
-    <div class="center-content">
+    <div class="centered-content">
         <!-- Centered banner image -->
         <div class="banner">
             <img src="assets/banner.jpg" alt="Nadine Beauty Banner">
