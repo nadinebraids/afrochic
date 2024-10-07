@@ -19,6 +19,11 @@
             margin: 0;
             padding: 0;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensure the body takes up the full viewport height */
         }
 
         /* Header styling */
@@ -57,18 +62,13 @@
             text-decoration: underline;
         }
 
-        /* Adjust spacing after header */
-        .content {
-            margin-top: 160px; /* Prevent overlap with the fixed header */
-        }
-
         /* Centered banner image */
         img.banner {
             width: 100%;
-            max-width: 2000px; /* Control the maximum size of the banner */
+            max-width: 1200px; /* Control the maximum size of the banner */
             height: auto;
             display: block;
-            margin: 0 auto; /* Centers the image */
+            margin: 0 auto; /* Centers the image horizontally */
         }
 
         /* Green band styling */
@@ -124,20 +124,17 @@
         </div>
     </div>
 
-    <!-- Main content starts here -->
-    <div class="content">
-        <!-- Banner image -->
-        <img class="banner" src="assets/banner.jpg" alt="Nadine Beauty Banner">
+    <!-- Centered banner image -->
+    <img class="banner" src="assets/banner.jpg" alt="Nadine Beauty Banner">
 
-        <!-- Full-width green band below banner -->
-        <div class="green-band"></div>
+    <!-- Full-width green band below banner -->
+    <div class="green-band"></div>
 
-        <!-- Welcome message -->
-        <h2>Welcome to Nadine Beauty</h2>
-        <p>
-            Discover the art of professional hair braiding with Nadine. Explore our services, browse our gallery, and book your appointment today!
-        </p>
-    </div>
+    <!-- Welcome message -->
+    <h2>Welcome to Nadine Beauty</h2>
+    <p>
+        Discover the art of professional hair braiding with Nadine. Explore our services, browse our gallery, and book your appointment today!
+    </p>
 
     <!-- Footer -->
     <footer>
