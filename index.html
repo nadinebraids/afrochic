@@ -18,12 +18,12 @@
             font-size: 25px;
             margin: 0;
             padding: 0;
-            left: 0; 
             text-align: center;
         }
+
         /* Header styling */
         .header {
-            width: 98vw;
+            width: 100vw;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -33,16 +33,18 @@
             top: 0;
             z-index: 1000;
         }
+
         .title1 {
             font-size: 65px;
             font-weight: bold;
             color: rgb(8, 72, 56);
-            font-family: "Lucida Calligraphy", "Lucida Handwriting", cursive; /* Fallbacks included */
+            font-family: "Lucida Calligraphy", "Lucida Handwriting", cursive;
         }
 
         .navigation {
             margin-right: 20px;
         }
+
         .navigation a {
             color: rgb(8, 72, 56);
             text-decoration: none;
@@ -50,44 +52,46 @@
             font-weight: bold;
             margin-left: 10px;
         }
+
         .navigation a:hover {
             text-decoration: underline;
         }
-        /* Center content */
-        .centered-content {
-            margin-top: 180px; /* Prevent overlap with the header */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            
-        
-        .banner img {
-            width: 100%;
-            max-width: 2000px; /* Max width for the banner */
-           
-           
+
+        /* Adjust spacing after header */
+        .content {
+            margin-top: 160px; /* Prevent overlap with the fixed header */
         }
+
+        /* Centered banner image */
+        img.banner {
+            width: 100%;
+            max-width: 2000px; /* Control the maximum size of the banner */
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Centers the image */
+        }
+
         /* Green band styling */
         .green-band {
             background-color: rgb(8, 72, 56);
             height: 200px;
-            width: 165vw; /* Full width of the page */
+            width: 100vw; /* Full width of the viewport */
             margin: 0;
-            position: relative;
-            left: 0;
         }
+
         /* Content styling */
         h2 {
             font-size: 28px;
             color: rgb(8, 72, 56);
         }
+
         p {
             font-size: 22px;
             color: rgb(8, 72, 56);
             max-width: 800px; /* Limit text width for readability */
             margin: 20px auto;
         }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -97,7 +101,6 @@
             font-size: 20px;
             width: 100%;
         }
-            }
     </style>
 </head>
 
@@ -121,12 +124,10 @@
         </div>
     </div>
 
-    <!-- Centered content -->
-    <div class="centered-content">
-        <!-- Centered banner image -->
-        <div class="banner">
-            <img src="assets/banner.jpg" alt="Nadine Beauty Banner">
-        </div>
+    <!-- Main content starts here -->
+    <div class="content">
+        <!-- Banner image -->
+        <img class="banner" src="assets/banner.jpg" alt="Nadine Beauty Banner">
 
         <!-- Full-width green band below banner -->
         <div class="green-band"></div>
@@ -140,8 +141,7 @@
 
     <!-- Footer -->
     <footer>
-        &copy; Nadine Beauty
-        &nbsp;|&nbsp; Designed by Nadine Braids Web Team
+        &copy; Nadine Beauty &nbsp;|&nbsp; Designed by Nadine Braids Web Team
     </footer>
 
 </body>
