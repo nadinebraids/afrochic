@@ -15,51 +15,58 @@
             background-color: white;
             color: rgb(8, 72, 56);
             font-family: Arial, sans-serif;
-            font-size: 20px; /* Increased font size for better readability */
+            font-size: 20px;
+            margin: 0;
         }
-        .banner {
-            position: relative;
-            text-align: center;
-        }
-        .banner img {
-            width: 100%;
-        }
-        .top-left {
-            position: absolute;
-            top: 8px;
-            left: 16px;
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
         }
         .title1 {
-            font-size: 48px; /* Increased font size for title */
+            font-size: 36px;
             font-weight: bold;
-            color: rgb(8, 72, 56); /* Ensuring green color for the title */
+            color: rgb(8, 72, 56);
+            margin-left: 20px;
         }
         .navigation {
-            width: 100%;
-            background-color: white;
-            text-align: center;
-            margin: 20px 0;
-        }
-        .navigation td {
-            padding: 10px;
+            margin-right: 20px;
         }
         .navigation a {
             color: rgb(8, 72, 56);
             text-decoration: none;
-            font-size: 22px; /* Increased navigation font size */
+            font-size: 18px;
             font-weight: bold;
+            margin-left: 15px;
         }
         .navigation a:hover {
             text-decoration: underline;
         }
-        h2 {
-            font-size: 28px; /* Increased font size for heading */
-            color: rgb(8, 72, 56);
+        .banner {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .banner img {
+            width: 100%;
+        }
+        .green-band {
+            background-color: rgb(8, 72, 56);
+            height: 50px;
+            margin-top: 20px;
+        }
+        .content {
+            padding: 40px;
             text-align: center;
         }
+        h2 {
+            font-size: 28px;
+            color: rgb(8, 72, 56);
+        }
         p {
-            font-size: 22px; /* Increased font size for paragraph */
-            text-align: center;
+            font-size: 22px;
+            color: rgb(8, 72, 56);
         }
         footer {
             text-align: center;
@@ -67,51 +74,39 @@
             background-color: white;
             color: rgb(8, 72, 56);
             border-top: 1px solid rgb(8, 72, 56);
-            font-size: 20px; /* Increased font size for footer */
+            font-size: 20px;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="banner">
-        <img src="assets/banner.jpg" alt="Nadine Beauty Banner">
-        <div class="top-left">
-            <span class="title1">NADINE BEAUTY</span>
+    <div class="header">
+        <span class="title1">NADINE BEAUTY</span>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="booking.html">Booking</a>
+            <a href="contact.html">Contact</a>
+            <a href="faqs.html">FAQs</a>
         </div>
     </div>
 
-    <table class="navigation">
-        <tr>
-            <td class="navigation">
-                <a class="current" title="Home Page" href=".">Home</a>
-            </td>
-            <td class="navigation">
-                <a title="Learn more about Nadine" href="about">About</a>
-            </td>
-            <td class="navigation">
-                <a title="Services offered" href="services">Services</a>
-            </td>
-            <td class="navigation">
-                <a title="Gallery of braiding styles" href="gallery">Gallery</a>
-            </td>
-            <td class="navigation">
-                <a title="Book an appointment" href="book">Booking</a>
-            </td>
-            <td class="navigation">
-                <a title="Contact information" href="contact">Contact</a>
-            </td>
-            <td class="navigation">
-                <a title="Frequently Asked Questions" href="faqs">FAQs</a>
-            </td>
-        </tr>
-    </table>
+    <div class="banner">
+        <img src="assets/banner.jpg" alt="Nadine Beauty Banner">
+    </div>
 
-    <h2>Welcome to Nadine Beauty</h2>
-    <p>
-        Discover the art of professional hair braiding with Nadine. Explore our services, browse our gallery, and book your appointment today!
-    </p>
- 
+    <div class="green-band"></div>
+
+    <div class="content">
+        <h2>Welcome to Nadine Beauty</h2>
+        <p>
+            Discover the art of professional hair braiding with Nadine. Explore our services, browse our gallery, and book your appointment today!
+        </p>
+    </div>
+
     <footer>
         &copy; Nadine Beauty
         &nbsp;|&nbsp; Designed by Nadine Braids Web Team
