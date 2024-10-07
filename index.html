@@ -18,6 +18,7 @@
             font-size: 20px;
             margin: 0;
         }
+        /* Header styling */
         .header {
             display: flex;
             justify-content: space-between;
@@ -44,18 +45,24 @@
         .navigation a:hover {
             text-decoration: underline;
         }
+        /* Banner centering */
         .banner {
             text-align: center;
-            margin-top: 20px;
+            margin: 20px 0;
         }
         .banner img {
-            width: 100%;
+            width: 80%; /* Adjust this value to make the banner smaller or bigger */
+            display: block;
+            margin: 0 auto;
         }
+        /* Green band styling */
         .green-band {
             background-color: rgb(8, 72, 56);
             height: 50px;
             margin-top: 20px;
+            width: 100%; /* Spans the full width of the page */
         }
+        /* Content styling */
         .content {
             padding: 40px;
             text-align: center;
@@ -81,6 +88,7 @@
 
 <body>
 
+    <!-- Header with title on left and navigation on right -->
     <div class="header">
         <span class="title1">NADINE BEAUTY</span>
         <div class="navigation">
@@ -94,12 +102,15 @@
         </div>
     </div>
 
+    <!-- Centered banner image -->
     <div class="banner">
         <img src="assets/banner.jpg" alt="Nadine Beauty Banner">
     </div>
 
+    <!-- Full-width green band below banner -->
     <div class="green-band"></div>
 
+    <!-- Page content -->
     <div class="content">
         <h2>Welcome to Nadine Beauty</h2>
         <p>
@@ -107,6 +118,7 @@
         </p>
     </div>
 
+    <!-- Footer -->
     <footer>
         &copy; Nadine Beauty
         &nbsp;|&nbsp; Designed by Nadine Braids Web Team
