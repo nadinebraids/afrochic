@@ -64,12 +64,14 @@
             display: block;
             margin: 0 auto;
         }
-        /* Green band */
+        /* Green band styling */
         .green-band {
             background-color: rgb(8, 72, 56);
             height: 50px;
-            width: 100%; /* Full width */
+            width: 100vw; /* Ensure it spans the full viewport width */
             margin: 20px 0;
+            position: relative;
+            left: 0;
         }
         /* Content styling */
         h2 {
@@ -118,7 +120,7 @@
             <img src="assets/banner.jpg" alt="Nadine Beauty Banner">
         </div>
 
-        <!-- Green band below banner -->
+        <!-- Full-width green band below banner -->
         <div class="green-band"></div>
 
         <!-- Welcome message -->
