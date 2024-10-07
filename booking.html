@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <base href=".">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <meta name="description" content="Booking Appointments with Nadine">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="KeyWords" content="Hair Braiding, Nadine, Booking">
+    <title>Book an Appointment</title>
+    <style>
+        body {
+            background-color: white;
+            color: rgb(8, 72, 56);
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+        }
+        .banner {
+            position: relative;
+            text-align: center;
+        }
+        .banner img {
+            width: 100%;
+        }
+        .top-left {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+        }
+        .title1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: rgb(8, 72, 56);
+        }
+        .navigation {
+            width: 100%;
+            background-color: white;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .navigation td {
+            padding: 10px;
+        }
+        .navigation a {
+            color: rgb(8, 72, 56);
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .navigation a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            font-size: 28px;
+            color: rgb(8, 72, 56);
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 22px;
+        }
+        label {
+            margin: 10px 0;
+        }
+        input, select {
+            font-size: 18px;
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 300px;
+        }
+        button {
+            background-color: rgb(8, 72, 56);
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(6, 54, 42);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            color: rgb(8, 72, 56);
+            border-top: 1px solid rgb(8, 72, 56);
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="banner">
+        <img src="assets/banner.jpg" alt="Nadine Beauty Banner">
+        <div class="top-left">
+            <span class="title1">NADINE BEAUTY</span>
+        </div>
+    </div>
+
+    <table class="navigation">
+        <tr>
+            <td class="navigation">
+                <a href="index.html">Home</a>
+            </td>
+            <td class="navigation">
+                <a href="about.html">About</a>
+            </td>
+            <td class="navigation">
+                <a href="services.html">Services</a>
+            </td>
+            <td class="navigation">
+                <a href="gallery.html">Gallery</a>
+            </td>
+            <td class="navigation">
+                <a class="current" href="booking.html">Booking</a>
+            </td>
+            <td class="navigation">
+                <a href="contact.html">Contact</a>
+            </td>
+            <td class="navigation">
+                <a href="faqs.html">FAQs</a>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Book an Appointment</h2>
+    <form action="submit_booking" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="service">Select Service:</label>
+        <select id="service" name="service">
+            <option value="box-braids">Box Braids</option>
+            <option value="cornrows">Cornrows</option>
+            <option value="twists">Twists</option>
+            <option value="goddess-braids">Goddess Braids</option>
+            <option value="feed-in-braids">Feed-in Braids</option>
+            <option value="custom">Custom Style</option>
+        </select>
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Preferred Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <button type="submit">Book Appointment</button>
+    </form>
+
+    <footer>
+        &copy; Nadine Beauty
+        &nbsp;|&nbsp; Designed by Nadine Braids Web Team
+    </footer>
+
+</body>
+</html>
