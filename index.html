@@ -3,7 +3,7 @@
 
 <head>
     <base href=".">
-    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.jpg"/>
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
     <meta name="description" content="Nadine's Braiding Business">
     <meta name="resource-type" content="document">
@@ -19,11 +19,6 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh; /* Ensure the body takes up the full viewport height */
         }
 
         /* Header styling */
@@ -62,13 +57,18 @@
             text-decoration: underline;
         }
 
+        /* Adjust spacing after header */
+        .content {
+            margin-top: 160px; /* Prevent overlap with the fixed header */
+        }
+
         /* Centered banner image */
         img.banner {
             width: 100%;
-            max-width: 1200px; /* Control the maximum size of the banner */
+            max-width: 2000px; /* Control the maximum size of the banner */
             height: auto;
             display: block;
-            margin: 0 auto; /* Centers the image horizontally */
+            margin: 0 auto; /* Centers the image */
         }
 
         /* Green band styling */
@@ -124,17 +124,20 @@
         </div>
     </div>
 
-    <!-- Centered banner image -->
-    <img class="banner" src="assets/banner.jpg" alt="Nadine Beauty Banner">
+    <!-- Main content starts here -->
+    <div class="content">
+        <!-- Banner image -->
+        <img class="banner" src="assets/banner.jpg" alt="Nadine Beauty Banner">
 
-    <!-- Full-width green band below banner -->
-    <div class="green-band"></div>
+        <!-- Full-width green band below banner -->
+        <div class="green-band"></div>
 
-    <!-- Welcome message -->
-    <h2>Welcome to Nadine Beauty</h2>
-    <p>
-        Discover the art of professional hair braiding with Nadine. Explore our services, browse our gallery, and book your appointment today!
-    </p>
+        <!-- Welcome message -->
+        <h2>Welcome to Nadine Beauty</h2>
+        <p>
+            Discover the art of professional hair braiding with Nadine. Explore our services, browse our gallery, and book your appointment today!
+        </p>
+    </div>
 
     <!-- Footer -->
     <footer>
