@@ -17,18 +17,16 @@
             font-family: Arial, sans-serif;
             font-size: 20px;
             margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            text-align: center;
         }
         /* Header styling */
         .header {
+            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px;
             background-color: white;
-            width: 100%;
             position: fixed;
             top: 0;
             z-index: 1000;
@@ -37,6 +35,7 @@
             font-size: 36px;
             font-weight: bold;
             color: rgb(8, 72, 56);
+            margin-left: 20px;
         }
         .navigation {
             margin-right: 20px;
@@ -51,25 +50,26 @@
         .navigation a:hover {
             text-decoration: underline;
         }
-        /* Centered container for the main content */
+        /* Center content */
         .centered-content {
+            margin-top: 150px; /* Added margin to prevent overlap with header */
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin-top: 150px; /* To avoid overlapping with fixed header */
-            text-align: center;
         }
-        /* Banner centering */
         .banner img {
-            width: 60%; /* Adjust the size of the banner image */
-            margin: 20px 0;
+            width: 60%;
+            max-width: 1000px;
+            display: block;
+            margin: 0 auto;
         }
         /* Green band */
         .green-band {
             background-color: rgb(8, 72, 56);
             height: 50px;
             width: 100%; /* Full width */
+            margin: 20px 0;
         }
         /* Content styling */
         h2 {
