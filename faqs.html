@@ -109,17 +109,128 @@
         </tr>
     </table>
 
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq">
-        <h3>How do I book an appointment?</h3>
-        <p>You can book an appointment by visiting the booking page or calling us directly at +123 456 7890.</p>
+<h2>Frequently Asked Questions</h2>
+<div class="faq">
+    <style>
+        .faq-item {
+            margin-bottom: 20px;
+        }
 
-        <h3>What types of braids do you offer?</h3>
-        <p>We offer a variety of styles, including box braids, cornrows, twists, goddess braids, and more. Visit our services page for the full list.</p>
+        .faq-item h3 {
+            cursor: pointer;
+            color: rgb(8, 72, 56);
+            font-size: 22px;
+            margin: 0;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border: 1px solid rgb(8, 72, 56);
+        }
 
-        <h3>Do you offer custom styles?</h3>
-        <p>Yes, we can work with you to create a custom style that matches your vision.</p>
+        .faq-item p {
+            display: none;
+            padding: 10px;
+            font-size: 18px;
+            background-color: white;
+            color: rgb(8, 72, 56);
+            border: 1px solid rgb(8, 72, 56);
+            border-top: none;
+        }
+
+        .faq-item h3:hover {
+            background-color: #e2e2e2;
+        }
+    </style>
+
+    <div class="faq-item">
+        <h3>1. What types of braiding styles do you offer?</h3>
+        <p>Please visit our styles page for a full list of braiding options: <a href="[URL to styles page]">View Braiding Styles</a>.</p>
     </div>
+
+    <div class="faq-item">
+        <h3>2. How long does a typical braiding session take?</h3>
+        <p>The duration of a braiding session varies depending on the style. On average, a session can last between 2 to 6 hours.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>3. Do you offer same-day appointments?</h3>
+        <p>Same-day appointments are available depending on schedule availability. Please call us at +1(575) 418 1033 to check.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>4. What is the cost range for different braiding styles?</h3>
+        <p>You can find our pricing details on the services page: <a href="[URL to pricing page]">View Pricing</a>.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>5. Do I need to bring my own hair for braiding, or do you provide it?</h3>
+        <p>We provide the hair for most of our braiding services, but if you prefer to bring your own, that is also welcome.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>6. Can you braid all hair types and textures?</h3>
+        <p>Yes, we are experienced with all hair types and textures, and we tailor our techniques to best suit your hair.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>7. How long do the braids typically last?</h3>
+        <p>With proper care, most braids can last between 4 to 8 weeks, depending on the style and hair type.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>8. Do you offer touch-ups or maintenance services for braids?</h3>
+        <p>Yes, we offer touch-ups and maintenance services to help extend the life of your braids. Please contact us for more details.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>9. What should I do to prepare my hair before the braiding appointment?</h3>
+        <p>It’s best to arrive with clean, detangled hair. Please ensure your hair is free from any heavy products or oils.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>10. How should I care for my braids after the appointment?</h3>
+        <p>To maintain your braids, keep your scalp moisturized and cover your hair with a silk or satin scarf when sleeping. We recommend using lightweight oils to keep the hair looking fresh.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>11. What is your cancellation policy for appointments?</h3>
+        <p>We require at least 24 hours' notice for any appointment cancellations. Cancellations made within 24 hours will incur a fee.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>12. Can I book an appointment online or do I need to call?</h3>
+        <p>You can book an appointment through our online booking page: <a href="[URL to booking page]">Book an Appointment</a>, or call us at +1(575) 418 1033.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>13. Do you offer braiding services for children?</h3>
+        <p>Yes, we offer braiding services for children. We take extra care to ensure that children are comfortable throughout the process.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>14. What forms of payment do you accept?</h3>
+        <p>We accept cash, credit/debit cards, and mobile payments such as Apple Pay and Google Pay.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>15. Can you do custom braiding styles based on reference photos?</h3>
+        <p>Yes, we are happy to work with reference photos to create custom styles. Please bring the photos to your consultation.</p>
+    </div>
+</div>
+
+<script>
+    const faqItems = document.querySelectorAll('.faq-item h3');
+    faqItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const answer = item.nextElementSibling;
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+            } else {
+                answer.style.display = 'block';
+            }
+        });
+    });
+</script>
+
 
     <footer>
         &copy; Nadine Beauty
