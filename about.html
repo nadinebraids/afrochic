@@ -72,21 +72,40 @@
             border-top: 1px solid rgb(8, 72, 56);
             font-size: 20px;
         }
+
+        .header {
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="banner">
-        <img src="assets/banner.jpg" alt="Nadine Beauty Banner">
+    <!-- Header with title on left and navigation on right -->
+    <div class="header">
+        <span class="title1">
+            <span>Nadine Afrochic Braids</span>
+        </span>
+
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a class="current" href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="book.html">Booking</a>
+            <a href="faqs.html">FAQs</a>
+        </div>
     </div>
 
-    <div class="navigation">
-        <a href="index.html">Home</a>
-        <a class="current" href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="book.html">Booking</a>
-        <a href="faqs.html">FAQs</a>
+    <div class="banner">
+        <img src="assets/banner.jpg" alt="Nadine Beauty Banner">
     </div>
 
     <h2>About Nadine</h2>
