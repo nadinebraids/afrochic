@@ -21,7 +21,6 @@
             text-align: center;
         }
 
-        /* Header styling */
         .header {
             width: 100vw;
             display: flex;
@@ -57,97 +56,93 @@
             text-decoration: underline;
         }
 
-        /* Adjust spacing after header */
         .content {
-            margin-top: 120px; /* Prevent overlap with the fixed header */
+            margin-top: 120px;
         }
 
-        /* Centered banner image */
         img.banner {
             width: 100%;
-            max-width: 3000px; /* Control the maximum size of the banner */
+            max-width: 3000px;
             height: auto;
             display: block;
-            margin-left: 950px; /* Centers the image */
         }
 
-        /* Green band styling */
         .green-band {
             background-color: rgb(8, 72, 56);
             height: 200px;
-            width: 100vw; /* Full width of the viewport */
+            width: 100vw;
             margin: 0;
         }
 
-        /* Content styling */
         h2 {
             font-size: 28px;
             color: rgb(8, 72, 56);
-            margin-left: 900px;
         }
 
         p {
             font-size: 22px;
             color: rgb(8, 72, 56);
-            max-width: 800px; /* Limit text width for readability */
-            margin-left: 800px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .cta-button {
+            background-color: rgb(8, 72, 56);
+            color: white;
+            padding: 15px 30px;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: rgb(6, 54, 42);
         }
 
         footer {
-           
-             margin-left: 800px;
             padding: 20px;
             background-color: white;
             color: rgb(8, 72, 56);
             border-top: 1px solid rgb(8, 72, 56);
             font-size: 20px;
-            width: 100%;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Header with title on left and navigation on right -->
     <div class="header">
         <span class="title1">
             <span>Nadine Afrochic Braids</span>
-            
         </span>
 
         <div class="navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
-            
             <a href="booking.html">Booking</a>
-            
             <a href="faqs.html">FAQs</a>
         </div>
     </div>
 
-    <!-- Main content starts here -->
     <div class="content">
-        <!-- Banner image -->
         <img class="banner" src="assets/banner.jpg" alt="Nadine Beauty Banner">
 
-        <!-- Full-width green band below banner -->
         <div class="green-band"></div>
 
-        <!-- Welcome message -->
-        <h2>Welcome!</h2>
+        <h2>Welcome to Nadine Afrochic Braids</h2>
         <p>
-            My name is Nadine, and I am a wife, mother, and professional hair braider with over 10 years of experience specializing in African hair braiding. Throughout my career, I’ve had the opportunity to work in Florida and New Mexico, and since 2019, I’ve proudly called Midtown Atlanta my home.
-
-            At Nadine Beauty, I offer a wide range of quality African braiding styles, all customized to meet the unique needs of my clients. Whether you're looking for traditional African braids or a custom design tailored specifically for you, my goal is to bring out your beauty with professionalism and care.
-
-            Please explore my gallery and take advantage of the quality services I offer. At Nadine Beauty, your satisfaction is my priority, and my commitment to excellence will make your beauty stand out!
-
-            Discover the art of professional hair braiding with me, Nadine. Browse our gallery, and book your appointment today!
+            At Nadine Beauty, we specialize in African hair braiding with a wide range of styles designed to bring out your unique beauty. With over 10 years of experience, our goal is to provide each client with professional and personalized service.
         </p>
+        <p>
+            Browse our services, explore our gallery, and book your appointment today. We look forward to making your beauty shine!
+        </p>
+
+        <a href="booking.html" class="cta-button">Book an Appointment</a>
     </div>
 
-    <!-- Footer -->
     <footer>
         &copy; Nadine Beauty &nbsp;|&nbsp; Designed by Nadine Braids Web Team
     </footer>
