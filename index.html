@@ -18,6 +18,7 @@
             font-size: 20px;
         }
 
+        /* Header styling */
         .header {
             width: 100vw;
             display: flex;
@@ -28,6 +29,7 @@
             position: fixed;
             top: 0;
             z-index: 1000;
+            border-bottom: 1px solid rgb(8, 72, 56);
         }
 
         .title1 {
@@ -53,16 +55,17 @@
             text-decoration: underline;
         }
 
+        /* Spacing to prevent overlap with fixed header */
+        .content {
+            margin-top: 150px; /* Adjust margin-top to ensure content doesn't overlap with the header */
+        }
+
         .banner {
             text-align: center;
         }
 
         .banner img {
             width: 100%;
-        }
-
-        .content {
-            margin-top: 120px;
         }
 
         h2 {
@@ -107,11 +110,9 @@
 
 <body>
 
+    <!-- Header with title and navigation links -->
     <div class="header">
-        <span class="title1">
-            <span>Nadine Afrochic Braids</span>
-        </span>
-
+        <span class="title1">Nadine Afrochic Braids</span>
         <div class="navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
