@@ -11,92 +11,65 @@
     <meta name="KeyWords" content="Hair Braiding, Beauty, Nadine">
     <title>Nadine Afrochic Braids</title>
     <style>
+        
         body {
             background-color: white;
             color: rgb(8, 72, 56);
             font-family: Arial, sans-serif;
             font-size: 20px;
         }
-
-        /* Header styling */
-        .header {
-            width: 100vw;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background-color: white;
-            position: fixed;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 1px solid rgb(8, 72, 56);
+        .banner {
+            position: relative;
+            text-align: center;
         }
-
+        .banner img {
+            width: 100%;
+        }
+        .top-left {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+        }
         .title1 {
             font-size: 65px;
             font-weight: bold;
             color: rgb(8, 72, 56);
             font-family: "Lucida Calligraphy", "Lucida Handwriting", cursive;
         }
-
         .navigation {
-            margin-right: 20px;
+            width: 100%;
+            background-color: white;
+            text-align: center;
+            margin: 20px 0;
         }
-
+        .navigation td {
+            padding: 10px;
+        }
         .navigation a {
             color: rgb(8, 72, 56);
             text-decoration: none;
             font-size: 22px;
             font-weight: bold;
-            padding: 10px;
         }
-
         .navigation a:hover {
             text-decoration: underline;
         }
-
-        /* Spacing to prevent overlap with fixed header */
-        .content {
-            margin-top: 150px; /* Adjust margin-top to ensure content doesn't overlap with the header */
-        }
-
-        .banner {
-            text-align: center;
-        }
-
-        .banner img {
-            width: 100%;
-        }
-
         h2 {
             font-size: 28px;
             color: rgb(8, 72, 56);
             text-align: center;
         }
-
-        p {
+        .faq {
             font-size: 22px;
-            max-width: 800px;
-            margin: 20px auto;
+            margin: 20px 100px;
+        }
+        .faq h3 {
+            font-size: 24px;
             color: rgb(8, 72, 56);
-            text-align: center;
         }
-
-        .cta-button {
-            background-color: rgb(8, 72, 56);
-            color: white;
-            padding: 15px 30px;
-            font-size: 22px;
-            font-weight: bold;
-            text-decoration: none;
-            margin: 20px auto;
-            display: inline-block;
+        .faq p {
+            margin-bottom: 20px;
         }
-
-        .cta-button:hover {
-            background-color: rgb(6, 54, 42);
-        }
-
         footer {
             text-align: center;
             padding: 20px;
@@ -110,23 +83,32 @@
 
 <body>
 
-    <!-- Header with title and navigation links -->
-    <div class="header">
-        <span class="title1">Nadine Afrochic Braids</span>
-        <div class="navigation">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="booking.html">Booking</a>
-            <a href="faqs.html">FAQs</a>
+    <div class="banner">
+        <img src="assets/banner.jpg" alt="Nadine Beauty Banner">
+        <div class="top-left">
+            <span class="title1">Nadine Afrochic Braids</span>
         </div>
     </div>
 
-    <div class="content">
-        <div class="banner">
-            <img src="assets/banner.jpg" alt="Nadine Beauty Banner">
-        </div>
-
+    <table class="navigation">
+        <tr>
+            <td class="navigation">
+                <a href="index.html">Home</a>
+            </td>
+            <td class="navigation">
+                <a href="about.html">About</a>
+            </td>
+            <td class="navigation">
+                <a href="services.html">Services</a>
+            </td>
+            <td class="navigation">
+                <a class="current" href="book.html">Booking</a>
+            </td>
+            <td class="navigation">
+                <a href="faqs.html">FAQs</a>
+            </td>
+        </tr>
+    </table>
         <h2>Welcome to Nadine Afrochic Braids</h2>
         <p>
             At Nadine Beauty, we specialize in African hair braiding with a wide range of styles designed to bring out your unique beauty. With over 10 years of experience, our goal is to provide each client with professional and personalized service.
