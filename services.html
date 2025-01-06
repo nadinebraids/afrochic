@@ -58,14 +58,19 @@
             color: rgb(8, 72, 56);
             text-align: center;
         }
-        ul {
-            font-size: 22px;
-            list-style-type: none;
+        .service-item {
             text-align: center;
-            padding: 0;
+            margin: 20px;
         }
-        ul li {
-            margin: 15px 0;
+        .service-image {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .service-description {
+            font-size: 22px;
+            color: rgb(8, 72, 56);
+            margin-top: 10px;
         }
         footer {
             text-align: center;
@@ -108,14 +113,16 @@
     </table>
 
     <h2>Our Services</h2>
-    <ul>
-        <li>Box Braids</li>
-        <li>Cornrows</li>
-        <li>Twists</li>
-        <li>Goddess Braids</li>
-        <li>Feed-in Braids</li>
-        <li>Custom Styles</li>
-    </ul>
+
+    <div class="service-item">
+        <img src="assets/1.png" alt="Box Braids" class="service-image">
+        <p class="service-description">Box Braids - $120</p>
+    </div>
+
+    <div class="service-item">
+        <img src="assets/1.png" alt="Cornrows" class="service-image">
+        <p class="service-description">Cornrows - $100</p>
+    </div>
 
     <footer>
         &copy; Nadine Beauty
